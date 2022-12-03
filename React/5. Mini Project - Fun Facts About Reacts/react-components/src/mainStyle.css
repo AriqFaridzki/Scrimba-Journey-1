@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+:root{
+    --mainBackgroundColor:#282D35;
+    --mainFontColor:#FFFFFF;
+
+    --headerBackgroundColor:#21222A;
+    --headerFontColor-ProjectDetail:#DEEBF8;
+    --headerFontColor-Logo:#61DAFB;
+    
+    --listStyleColor:#61DAFB;
+
+    --mainFontSizeHeading:700;
+    --headerFontSize-Logo:700;
+    --headerFontSize-ProjectDetail:500;
+    --mainFontSizeList:300;
+
+}
+
+body{
+    /* max-width: 600px; */
+    width: 100%;
+
+    /* display: flex;
+    justify-content: center; */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* width: 100%;
+    height: 100%; */
+    /* background-color: red; */
+
+    font-family: 'Inter', sans-serif;
+
+    background-color: var(--mainBackgroundColor);
+
+    /* background-color: #FFFFFF; */
+    background-image:url(./assets/reactHalf.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position-y: 100%;
+    background-position-x: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height:100px;
+    align-items: center;
+    background-color: var(--headerBackgroundColor);
+
+    padding: 10px 40px;
+}
+
+.nav-logo{
+    display: inherit;
+
+}
+
+.nav-logo > p{
+    margin-left:10px;
+    font-weight: var(--headerFontSize-Logo);
+    color: var(--headerFontColor-Logo);
+    font-size: 22px;
+}
+
+.nav-logo > img{
+    width: 30px;
+}
+
+    
+.nav-items{
+    list-style: none;
+    display: inherit;
+    font-weight: var(--headerFontSize-ProjectDetail);
+    color: var(--headerFontColor-ProjectDetail);
+    font-size: 16px;
+}
+
+.nav-items > :nth-child(2){
+    margin-left: 5px;
+}
+
+
+.wrapper{
+   margin-left: 40px;
+}
+
+.main-container{
+    margin-top: 70px;
+}
+
+.main-Header{
+    color: var(--mainFontColor);
+    font-size: 40px;
+    font-weight: var(--mainFontSizeHeading);
+}
+
+.main-list > li{
+    font-size: 20px;
+    font-weight: var(--mainFontSizeList);
+    color: var(--mainFontColor);
+
+    list-style-type:disc;
+    padding-top: 20px;
+    
+
+}
+
+li::marker{
+    color: var(--listStyleColor);
+    font-size:25px;
+}
+
+.footer-wrapper{
+    /* background-color: red; */
+    /* width: 100%; */
+    /* text-align: center; */
+    display: flex;
+    /* height: 100%; */
+    justify-content: center;
+    /* height: 100%; */
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+
+    color: white;
+
+}
+
+
+
+

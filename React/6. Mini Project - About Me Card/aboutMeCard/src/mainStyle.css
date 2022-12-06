@@ -2,20 +2,27 @@
 
 
 :root{
-    --mainBackgroundColor:#282D35;
-    --mainFontColor:#FFFFFF;
-
-    --headerBackgroundColor:#21222A;
-    --headerFontColor-ProjectDetail:#DEEBF8;
-    --headerFontColor-Logo:#61DAFB;
+    --body-BgColor:#282D35;
+    --whole-container-bgColor:#23252C;
+    --mainContentBgcolor:#1A1B21;
     
-    --listStyleColor:#61DAFB;
+    --mainContent-JobTitleColor:#F3BF99;
+    --mainContent-WebsiteLinkColor:#F5F5F5;
+    --mainContent-Btn-ClickedBgcolor:#FFFFFF;
+    --mainContent-Btn-ClickedFontColor:#374151;
 
-    --mainFontSizeHeading:700;
-    --headerFontSize-Logo:700;
-    --headerFontSize-ProjectDetail:500;
-    --mainFontSizeList:300;
+    --mainContent-Btn-BorderColor:#D1D5DB;
+    --mainContent-Btn-Default-BgColor:#5093E2;
+    --mainContent-Btn-Default-FontColor: #FFFFFF;
+    
 
+    --mainContent-HeaderTitle-FontColor:#F5F5F5;
+    --mainContent-Description-FontColor:#DCDCDC;
+    
+    --mainContent-Description-FontColor:#DCDCDC;
+
+
+    --footer-SocialMedia-BgColor:#918E9B;
 }
 
 body{
@@ -25,18 +32,16 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background-color: var(--mainBackgroundColor);
+    background-color: var(--body-BgColor);
     /* background-color: #FFFFFF; */
     /* Default */
 
-
-
+    
 }
 
 
 .main-container{
-    /* display: flex;
-    align-content: center; */
+   color: red;
 }
 
 .mainWrapper{
@@ -44,11 +49,52 @@ max-width: 800px;
 height: 560px;
 margin: 30px auto;
 /* overflow: hidden; */
-background-color: white;
+background-color: #23252C
 
 }
 
 
+.content-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    height: 560px;
 
+}
+
+
+.content-container{
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+
+    height: 400px;
+    max-width: 320px;
+    border: 1px solid pink;
+
+}
+
+.content-header{
+    text-align: center;
+}
+
+.content-header > *{
+    /* display: inline; */
+    margin: 10px auto;
+}
+
+.content-header > h6{
+    margin-top:3px;
+}
+
+.content-header-website{
+    color: var(--mainContent-WebsiteLinkColor);
+    text-decoration: none;
+    font-weight: 100;
+}
 
 

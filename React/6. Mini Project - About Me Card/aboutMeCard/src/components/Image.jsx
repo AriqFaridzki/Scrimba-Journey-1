@@ -2,7 +2,7 @@ import React from 'react';
 import ReactLogo from '../assets/react.svg'
 
 
-function Header() {
+function Image() {
     return ( 
     <>
           <header>
@@ -12,4 +12,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Image;
